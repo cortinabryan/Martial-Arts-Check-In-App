@@ -145,7 +145,7 @@
 }
 
 /* Double check */
-/* .container3 {
+.container3 {
   background-color: #6b6a6a;
   color: #000;
   grid-gap: 25px;
@@ -153,6 +153,9 @@
   font-family: poppins;
   display: flex;
   justify-content: center;
+  /* height: 100%; */
+  /* margin-bottom: 0;
+  padding-bottom: 0; */
 }
 .container3 .ranks {
   width: 1500px;
@@ -169,35 +172,35 @@
   padding: 2rem;
   border-radius: 2rem 2rem 0 0;
 }
-.container3 .ranks .ranksInner .rank {
+.container3 .ranks .ranks-inner .rank {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   margin: 2rem 0;
 }
-.container3 .ranks .ranksInner .rank h3 {
+.container3 .ranks .ranks-inner .rank h3 {
   margin: 0 2rem;
 }
-.container3 .ranks .ranksInner .rank img {
+.container3 .ranks .ranks-inner .rank img {
   width: 15rem;
   height: 80px;
   margin: 0 5rem;
 }
-.container3 .contactContainer {
+.container3 .contact-container {
   display: flex;
   justify-content: space-between;
   color: #000;
 }
-.container3 .contactContainer .contactLeft {
+.container3 .contact-container .contact-left {
   width: 80rem;
 }
-.container3 .contactContainer .contactLeft .row {
+.container3 .contact-container .contact-left .row {
   margin-top: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.container3 .contactContainer .contactLeft .row input {
+.container3 .contact-container .contact-left .row input {
   padding: 2rem 2rem 2rem 1rem;
   margin: 0 2rem;
   height: 2rem;
@@ -207,10 +210,10 @@
   background-color: #080a16;
   border-radius: 5px;
 }
-.container3 .contactContainer .contactLeft .row .msg {
+.container3 .contact-container .contact-left .row .msg {
   width: 200px;
 }
-.container3 .contactContainer .contactLeft .row .msg textarea {
+.container3 .contact-container .contact-left .row .msg textarea {
   padding: 2rem 2rem 2rem 1rem;
   margin: 0 2rem;
   height: 2rem;
@@ -221,7 +224,7 @@
   background-color: #080a16;
   border-radius: 5px;
 }
-.container3 .contactContainer .contactLeft .row button {
+.container3 .contact-container .contact-left .row button {
   background-color: #a11625;
   color: #fff;
   border-radius: 5px;
@@ -233,18 +236,18 @@
   align-self: center;
   justify-self: center;
 }
-.container3 .contactContainer .contactLeft .row button:hover {
+.container3 .contact-container .contact-left .row button:hover {
   background-color: #080a16;
   transition: 0.2s;
 }
-.container3 .contactContainer .contactRight {
+.container3 .contact-container .contact-right {
   width: 40rem;
 }
-.container3 .contactContainer .contactRight .info {
+.container3 .contact-container .contact-right .info {
   display: flex;
   flex-direction: column;
   font-size: 1.2rem;
   align-items: center;
   margin-top: 12.5rem;
   justify-content: center;
-} */
+}
