@@ -25,13 +25,18 @@
   color: #fff;
   display: grid;
   grid-gap: 25px;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: 1fr 1.5fr 1.5fr;
   font-family: poppins;
+  grid-template-areas:
+    "user-info class-sched class-sched"
+    "user-info belt-prog class-history";
 }
 .container .user {
-  grid-column: span 2;
-  grid-row: -1;
+  /* grid-column: span 2; */
+  /* grid-row: -1; */
   background: #256d83;
+  height: 100%;
+  grid-area: user-info;
 }
 .container .user .user-information {
   width: 100%;
@@ -69,6 +74,7 @@
   flex-direction: column;
   text-align: center;
   border-radius: 2rem;
+  grid-area: class-sched;
 }
 .container .class-schedule h2 {
   background: #235e85;
@@ -98,6 +104,7 @@
   background: #fff;
   text-align: center;
   border-radius: 2rem;
+  grid-area: belt-prog;
 }
 .container .belt-progression img {
   width: 15rem;
@@ -120,6 +127,7 @@
   flex-direction: column;
   text-align: center;
   border-radius: 2rem;
+  grid-area: class-history;
 }
 .container .class-history h2 {
   background: #235e85;
