@@ -102,6 +102,24 @@ body {
   padding: 5px;
   color: #000;
 }
+
+/* Hover Effect */
+.container .class-schedule table tr:hover {
+  background-color: red;
+  /* cursor: pointer; */
+  /* display: flex; */
+}
+
+.container .class-schedule table tr .check-in-btn {
+  /* border: none !important; */
+  margin: 0;
+  background-color: green;
+  font-size: 1em;
+  display: none;
+}
+.container .class-schedule table tr .check-in-btn:hover {
+}
+
 .container .belt-progression {
   grid-column: 3 / span 3;
   margin: 0 0 25px 0;
