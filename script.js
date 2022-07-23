@@ -1,16 +1,66 @@
-const checkInBtn = document.querySelector(".check-in-btn");
-const checkInBtns = document.querySelectorAll(".check-in-btn");
-const tableRows = document.querySelectorAll(".table-row");
+// const checkInBtn = document.querySelector(".check-in-btn");
 
-const tableRow = document.querySelectorAll(".table-row");
+// const checkInBtns = document.querySelectorAll(".check-in-btn");
+// // const tableRows = document.querySelectorAll(".table-row");
 
-document.addEventListener("mouseover", function checkHover() {
-  if (tableRow.matches(":hover")) {
-    checkInBtn.style.display = "unset";
-  } else {
-    checkInBtn.style.display = "none";
-  }
-});
+// const tableRow = document.querySelector(".table-row");
+
+// document.addEventListener("mouseover", () => {
+//   if (tableRow.matches(":hover")) {
+//     checkInBtns.forEach((e) => (e.style.display = "unset"));
+//     // e.target.style.display = "unset";
+//   } else {
+//     checkInBtns.forEach((e) => (e.style.display = "none"));
+//     // e.target.style.display = "none";
+//   }
+// });
+
+// document.addEventListener("mouseover", () => {
+//   if (tableRow.matches(":hover")) {
+//     // checkInBtn.style.display = "unset";
+//     // tableRow.style.background = "blue";
+//   } else {
+//     checkInBtn.style.display = "none";
+//   }
+// });
+
+//
+
+// If - forEach
+
+// if (tableRow.matches(":hover")) {
+//   checkInBtns.forEach((e) =>
+//     e.addEventListener("mouseover", () => {
+//       // checkInBtn.style.display = "unset";
+//       tableRow.style.background = "blue";
+//     })
+//   );
+// } else {
+//   checkInBtn.style.display = "none";
+// }
+
+// forEach - If;
+// checkInBtns.forEach((e) =>
+//   e.addEventListener("mouseover", () => {
+//     if (tableRow.matches(":hover")) {
+//       // checkInBtn.style.display = "unset";
+//       tableRow.style.background = "blue";
+//       console.log("its hovering!");
+//     } else {
+//       // checkInBtn.style.display = "none";
+//       console.log("its not hovering!");
+//     }
+//   })
+// );
+
+// document.addEventListener("mouseover", () => {
+//   if (tableRow.matches(":hover")) {
+//     // checkInBtn.style.display = "unset";
+//     // tableRow.style.background = "blue";
+//   } else {
+//     checkInBtn.style.display = "none";
+//   }
+// });
 
 // if tr === hover { checkInBtn === display none}
 
@@ -27,6 +77,23 @@ document.addEventListener("mouseover", function checkHover() {
 // document.addEventListener("mouseover", function checkHover() {
 //   const hovered = isHover(tableRow);
 //   if (hovered !== checkHover.hovered) {
+//     checkInBtn.style.display = "unset";
+//   } else {
+//     checkInBtn.style.display = "none";
+//   }
+// });
+
+// Copy
+
+// const checkInBtn = document.querySelector(".check-in-btn");
+
+// const checkInBtns = document.querySelectorAll(".check-in-btn");
+// // const tableRows = document.querySelectorAll(".table-row");
+
+// const tableRow = document.querySelector(".table-row");
+
+// document.addEventListener("mouseover", function checkHover() {
+//   if (tableRow.matches(":hover")) {
 //     checkInBtn.style.display = "unset";
 //   } else {
 //     checkInBtn.style.display = "none";
