@@ -290,3 +290,38 @@ body {
   margin-top: 12.5rem;
   justify-content: center;
 }
+
+.pop-up-container {
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  position: fixed;
+  background-color: rgba(22, 50, 87, 0.504);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: poppins;
+}
+
+.button-row {
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5em;
+  gap: 5%;
+}
+
+.popup-btn {
+  background-color: rgb(19, 77, 128);
+  padding: 1rem 2rem;
+  font-family: poppins;
+  border: 2.5px solid #000000;
+  transition: font-size 1s cubic-bezier(0, 2.32, 0.79, -0.7);
+  /* transition: font-size 1.5s ease-out; */
+}
+.popup-btn:hover {
+  cursor: pointer;
+  font-size: 2.5rem;
+}
