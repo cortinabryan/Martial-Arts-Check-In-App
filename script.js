@@ -1,9 +1,11 @@
-// const checkInBtn = document.querySelector(".check-in-btn");
+const checkInBtn = document.querySelector(".check-in-btn");
 
-// const checkInBtns = document.querySelectorAll(".check-in-btn");
-// // const tableRows = document.querySelectorAll(".table-row");
+const checkInBtns = document.querySelectorAll(".check-in-btn");
+// const tableRows = document.querySelectorAll(".table-row");
 
-// const tableRow = document.querySelector(".table-row");
+const tableRow = document.querySelector(".table-row");
+
+/* Pre-nut clarity code */
 
 // document.addEventListener("mouseover", () => {
 //   if (tableRow.matches(":hover")) {
@@ -23,8 +25,6 @@
 //     checkInBtn.style.display = "none";
 //   }
 // });
-
-//
 
 // If - forEach
 

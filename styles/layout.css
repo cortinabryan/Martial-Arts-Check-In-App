@@ -110,28 +110,30 @@ body {
   /* display: flex; */
 }
 
+/* Wow Moment */
+
 .container .class-schedule table tr .check-in-btn {
   /* border: none !important; */
   margin: 0;
+  margin-right: 10px;
   background-color: green;
   font-size: 1em;
   display: none;
 }
+.container .class-schedule table tr:hover .check-in-btn {
+  display: initial;
+}
 
-.container .class-schedule table tr:hover + #btn-1 {
-  display: none;
-}
-.container .class-schedule table tr:hover ~ #btn-1 {
-  display: unset;
-}
+/* - */
 
 .class-schedule table tr:hover + .check-in-btn {
   background-color: yellow;
   display: block;
 }
 
-/* .container .class-schedule table tr .check-in-btn:hover {
-} */
+.container .class-schedule table tr .check-in-btn:hover {
+  cursor: pointer;
+}
 
 .container .belt-progression {
   grid-column: 3 / span 3;
