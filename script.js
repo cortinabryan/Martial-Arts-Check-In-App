@@ -5,7 +5,29 @@ const checkInBtns = document.querySelectorAll(".check-in-btn");
 
 const tableRow = document.querySelector(".table-row");
 
-/* Pre-nut clarity code */
+const popUpBtn = document.querySelectorAll(".popup-btn");
+
+const popUpContainer = document.querySelector(".pop-up-container");
+
+// Pop up Btn
+
+popUpBtn.forEach((e) => {
+  e.addEventListener("click", () => {
+    popUpContainer.style.display = "none";
+  });
+});
+
+// Check in Btn
+
+checkInBtns.forEach((e) => {
+  e.addEventListener("click", () => {
+    popUpContainer.style.display = "flex";
+  });
+});
+
+///////////////////////////////////////////////////////////////////
+
+/* Pre-enlightenment code */
 
 // document.addEventListener("mouseover", () => {
 //   if (tableRow.matches(":hover")) {
