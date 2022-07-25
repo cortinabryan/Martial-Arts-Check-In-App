@@ -61,54 +61,81 @@
         <table>
           <tbody>
             <tr>
-              <th>Time</th>
-              <th class="test">Class</th>
-              <th>Instructor</th>
+              <th class="table-header">Time</th>
+              <th class="table-header">Class</th>
+              <th class="table-header">Instructor</th>
             </tr>
             <tr class="table-row">
               <td class="check-in-btn-container">
-                <button class="check-in-btn" id="btn-1">Check-in</button>
+                <button
+                  class="check-in-btn"
+                  id="btn-1"
+                  data-class="EarlyMorning"
+                >
+                  Check-in
+                </button>
                 06:15 AM
               </td>
-              <td class="test">Early Morning Beginner/Intermediate</td>
+              <td class="test">Early Morning</td>
               <td>Prof. Caio Terra</td>
             </tr>
             <tr class="'table-row">
               <td class="check-in-btn-container">
-                <button class="check-in-btn" id="btn-2">Check-in</button>09:00
-                AM
+                <button
+                  class="check-in-btn"
+                  id="btn-2"
+                  data-class="MorningBeginner"
+                >
+                  Check-in</button
+                >09:00 AM
               </td>
               <td class="test">Beginner</td>
               <td>Prof. Mikey Musemeci</td>
             </tr>
             <tr class="table-row">
               <td class="check-in-btn-container">
-                <button class="check-in-btn" id="btn-3">Check-in</button>10:00
-                AM
+                <button
+                  class="check-in-btn"
+                  id="btn-3"
+                  data-class="MorningIntermediate"
+                >
+                  Check-in</button
+                >10:00 AM
               </td>
               <td class="test">Intermediate/Advanced</td>
               <td>Prof. Andre Galvao</td>
             </tr>
             <tr class="table-row">
               <td class="check-in-btn-container">
-                <button class="check-in-btn" id="btn-4">Check-in</button>05:00
-                PM
+                <button class="check-in-btn" id="btn-4" data-class="Kids">
+                  Check-in</button
+                >05:00 PM
               </td>
               <td class="test">Kids 4-12 years</td>
               <td>Prof. Gabi Garcia</td>
             </tr>
             <tr class="table-row">
               <td class="check-in-btn-container">
-                <button class="check-in-btn" id="btn-5">Check-in</button>06:00
-                PM
+                <button
+                  class="check-in-btn"
+                  id="btn-5"
+                  data-class="NightBeginner"
+                >
+                  Check-in</button
+                >06:00 PM
               </td>
               <td class="test">Beginner</td>
               <td>Prof. Mica Galvao</td>
             </tr>
             <tr class="table-row">
               <td class="check-in-btn-container">
-                <button class="check-in-btn" id="btn-6">Check-in</button>07:00
-                PM
+                <button
+                  class="check-in-btn"
+                  id="btn-6"
+                  data-class="NightIntermediate"
+                >
+                  Check-in</button
+                >07:00 PM
               </td>
               <td class="test">Intermediate/Advanced</td>
               <td>Prof. Gordon Ryan</td>
@@ -125,34 +152,10 @@
       <div class="class-history">
         <h2>Attendance History</h2>
         <table>
-          <tbody>
+          <tbody class="class-history-body" id="class-history-body">
             <tr>
-              <th>Class</th>
-              <th>Date & Time</th>
-            </tr>
-            <tr>
-              <td>Whatever Class</td>
-              <td>Whatever Time</td>
-            </tr>
-            <tr>
-              <td>Whatever Class</td>
-              <td>Whatever Time</td>
-            </tr>
-            <tr>
-              <td>Whatever Class</td>
-              <td>Whatever Time</td>
-            </tr>
-            <tr>
-              <td>Whatever Class</td>
-              <td>Whatever Time</td>
-            </tr>
-            <tr>
-              <td>Whatever Class</td>
-              <td>Whatever Time</td>
-            </tr>
-            <tr>
-              <td>Whatever Class</td>
-              <td>Whatever Time</td>
+              <th class="table-header">Class</th>
+              <th class="table-header">Date & Time</th>
             </tr>
           </tbody>
         </table>

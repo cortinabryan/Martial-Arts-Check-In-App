@@ -94,6 +94,7 @@ body {
   background-color: #4287f5;
   color: #fff !important;
 }
+
 .container .class-schedule table th,
 .container .class-schedule table td {
   width: 150px;
@@ -105,7 +106,7 @@ body {
 
 /* Hover Effect */
 .container .class-schedule table tr:hover {
-  background-color: red;
+  background-color: rgb(17, 56, 49);
   /* cursor: pointer; */
   /* display: flex; */
 }
@@ -115,8 +116,10 @@ body {
 .container .class-schedule table tr .check-in-btn {
   /* border: none !important; */
   margin: 0;
+  padding: 0.3em;
   margin-right: 10px;
-  background-color: green;
+  border-radius: 5px;
+  background-color: #0944a2;
   font-size: 1em;
   display: none;
 }
@@ -325,4 +328,13 @@ body {
 .popup-btn:hover {
   cursor: pointer;
   font-size: 2.5rem;
+}
+
+.table-header {
+  /* font-size: 1.2rem;
+  background-color: #4287f5;
+  color: #fff !important; */
+  background-color: rgb(9, 68, 162);
+  color: rgb(232, 230, 227) !important;
+  /* margin-bottom: 10px; */
 }

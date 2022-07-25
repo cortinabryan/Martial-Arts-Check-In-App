@@ -1,29 +1,51 @@
 const checkInBtn = document.querySelector(".check-in-btn");
-
 const checkInBtns = document.querySelectorAll(".check-in-btn");
 // const tableRows = document.querySelectorAll(".table-row");
-
 const tableRow = document.querySelector(".table-row");
-
 const popUpBtn = document.querySelectorAll(".popup-btn");
-
 const popUpContainer = document.querySelector(".pop-up-container");
+const classHistoryBody = document.getElementById("class-history-body");
+const rows = `<tr> <td>alright</td> <td>lets gooo</td> </tr>`;
+let currentRow = ``;
+const classRows = {
+  EarlyMorning: `<tr> <td>Early Morning</td> <td>06:15AM</td> </tr>`,
+  MorningBeginner: `<tr> <td>Beginner</td> <td>09:00AM</td> </tr>`,
+  MorningIntermediate: `<tr> <td>Intermediate</td> <td>10:00AM</td> </tr>`,
+  Kids: `<tr> <td>Kids 4-12 years </td> <td>05:00PM</td> </tr>`,
+  NightBeginner: `<tr> <td>Beginner</td> <td>06:00PM</td> </tr>`,
+  NightIntermediate: `<tr> <td>Intermediate</td> <td>07:00PM</td> </tr>`,
+};
+let target = "";
 
 // Pop up Btn
+
+const pickRows = () => {
+  currentRow += classRows[target];
+  return currentRow;
+};
 
 popUpBtn.forEach((e) => {
   e.addEventListener("click", () => {
     popUpContainer.style.display = "none";
+    classHistoryBody.innerHTML = `<tr>
+		<th class="table-header">Class</th>
+		<th class="table-header">Date & Time</th>
+		</tr>
+		${pickRows()}
+		`;
   });
 });
 
 // Check in Btn
 
 checkInBtns.forEach((e) => {
-  e.addEventListener("click", () => {
+  e.addEventListener("click", (event) => {
     popUpContainer.style.display = "flex";
+    console.log((target = event.target.getAttribute("data-class")));
   });
 });
+
+// Attendance history
 
 ///////////////////////////////////////////////////////////////////
 
