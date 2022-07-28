@@ -4,6 +4,8 @@ const checkInBtns = document.querySelectorAll(".check-in-btn");
 const tableRow = document.querySelector(".table-row");
 const popUpBtn = document.querySelectorAll(".popup-btn");
 const popUpContainer = document.querySelector(".pop-up-container");
+const popUpYes = document.getElementById("btn-yes");
+const popUpNo = document.getElementById("btn-no");
 const classHistoryBody = document.getElementById("class-history-body");
 const rows = `<tr> <td>alright</td> <td>lets gooo</td> </tr>`;
 let currentRow = ``;
@@ -26,13 +28,17 @@ const pickRows = () => {
 
 popUpBtn.forEach((e) => {
   e.addEventListener("click", () => {
-    popUpContainer.style.display = "none";
-    classHistoryBody.innerHTML = `<tr>
-		<th class="table-header">Class</th>
-		<th class="table-header">Date & Time</th>
-		</tr>
-		${pickRows()}
-		`;
+    if (e === popUpYes) {
+      popUpContainer.style.display = "none";
+      classHistoryBody.innerHTML = `<tr>
+      <th class="table-header">Class</th>
+      <th class="table-header">Date & Time</th>
+      </tr>
+      ${pickRows()}
+      `;
+    } else {
+      popUpContainer.style.display = "none";
+    }
   });
 });
 
@@ -41,9 +47,43 @@ popUpBtn.forEach((e) => {
 checkInBtns.forEach((e) => {
   e.addEventListener("click", (event) => {
     popUpContainer.style.display = "flex";
-    console.log((target = event.target.getAttribute("data-class")));
+    // console.log((target = event.target.getAttribute("data-class")));
   });
 });
+
+///////////////////////////////////////////////////////////////////
+
+/* SAVED - DO NOT CHANGE */
+
+// // Pop up Btn
+
+// const pickRows = () => {
+//   currentRow += classRows[target];
+//   return currentRow;
+// };
+
+// popUpBtn.forEach((e) => {
+//   e.addEventListener("click", () => {
+//     popUpContainer.style.display = "none";
+//     classHistoryBody.innerHTML = `<tr>
+// 		<th class="table-header">Class</th>
+// 		<th class="table-header">Date & Time</th>
+// 		</tr>
+// 		${pickRows()}
+// 		`;
+//   });
+// });
+
+// // Check in Btn
+
+// checkInBtns.forEach((e) => {
+//   e.addEventListener("click", (event) => {
+//     popUpContainer.style.display = "flex";
+//     console.log((target = event.target.getAttribute("data-class")));
+//   });
+// });
+
+///////////////////////////////////////////////////////////////////
 
 // Attendance history
 
