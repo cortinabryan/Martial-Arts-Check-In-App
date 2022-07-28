@@ -18,6 +18,11 @@ const classRows = {
   NightIntermediate: `<tr> <td>Intermediate</td> <td>07:00PM</td> </tr>`,
 };
 let target = "";
+// const beltHoursCur = document.getElementById("belt-hours-cur");
+// const beltHoursReq = document.getElementById("belt-hours-req");
+const beltHoursCur = document.getElementById("belt-hours-cur");
+// const beltHoursCurNum = Number(document.getElementById("belt-hours-cur"));
+const beltHoursReq = document.getElementById("belt-hours-req");
 
 // Pop up Btn
 
@@ -36,6 +41,8 @@ popUpBtn.forEach((e) => {
       </tr>
       ${pickRows()}
       `;
+
+      beltHoursCur.innerHTML = Number(beltHoursCur.innerHTML) + 2;
     } else {
       popUpContainer.style.display = "none";
     }
@@ -47,7 +54,8 @@ popUpBtn.forEach((e) => {
 checkInBtns.forEach((e) => {
   e.addEventListener("click", (event) => {
     popUpContainer.style.display = "flex";
-    // console.log((target = event.target.getAttribute("data-class")));
+    // target = event.target.getAttribute("data-class");
+    console.log((target = event.target.getAttribute("data-class")));
   });
 });
 

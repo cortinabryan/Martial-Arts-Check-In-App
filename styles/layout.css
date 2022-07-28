@@ -138,6 +138,8 @@ body {
   cursor: pointer;
 }
 
+/* Belt Progression */
+
 .container .belt-progression {
   grid-column: 3 / span 3;
   margin: 0 0 25px 0;
@@ -159,6 +161,25 @@ body {
 .container .belt-progression h3 {
   color: #000;
 }
+
+.container .belt-progression .belt-hours-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* background: green; */
+}
+.container .belt-progression .belt-hours {
+  margin: 0 5px;
+}
+.container .belt-progression .belt-hours-text {
+  font-size: 1.8rem;
+}
+.container .belt-progression .belt-hours-num {
+  font-size: 2.2rem;
+}
+
+/* Attendance History */
+
 .container .class-history {
   margin: 0 25px 25px 0;
   grid-column: span 3;
