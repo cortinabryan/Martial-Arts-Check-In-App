@@ -106,9 +106,8 @@ body {
 
 /* Hover Effect */
 .container .class-schedule table tr:hover {
-  background-color: rgb(31, 144, 123);
-  /* cursor: pointer; */
-  /* display: flex; */
+  background-color: rgba(6, 150, 112, 0.511);
+  /* background-color: rgb(31, 144, 123); */
 }
 
 /* Wow Moment */
@@ -120,6 +119,7 @@ body {
   margin-right: 10px;
   border-radius: 5px;
   background-color: #0e5ede;
+  color: #ffffff;
   font-size: 1em;
   display: none;
 }
@@ -348,6 +348,10 @@ body {
   font-family: poppins;
 }
 
+.pop-up h1 {
+  color: #ffffff;
+}
+
 .button-row {
   /* background-color: red; */
   display: flex;
@@ -358,6 +362,7 @@ body {
 
 .popup-btn {
   background-color: rgb(19, 77, 128);
+  color: #ffffff;
   padding: 1rem 2rem;
   font-family: poppins;
   border: 2.5px solid #000000;
