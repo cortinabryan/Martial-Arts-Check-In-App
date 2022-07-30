@@ -10,10 +10,11 @@ body {
   font-family: poppins;
   height: 100vh;
   background-color: rgb(57, 55, 55);
+  color: #ffffff;
 }
 
 .container {
-  margin: 2rem;
+  /* margin-top: 2.5rem; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,10 +66,32 @@ input {
   margin-bottom: 3rem;
 }
 
+.top h1 {
+  background-color: rgb(9, 68, 162);
+}
+
 .button button {
   background-color: red;
   margin-top: 5rem;
   height: 3rem;
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.button button:hover {
+  cursor: pointer;
+}
+
+#login-here {
+  font-size: 30px;
+  color: #ffffff;
+  background-color: rgb(9, 68, 162);
+  margin-top: 5rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#forgot-password {
+  color: red;
 }
