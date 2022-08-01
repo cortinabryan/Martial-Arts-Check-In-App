@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Martial Arts Check-In</title>
     <link rel="stylesheet" type="text/css" href="/styles/layout.css" />
+    <script src="../js/components.js" defer></script>
+    <script src="../script.js" defer></script>
   </head>
   <body>
     <div class="nav">
@@ -69,8 +71,8 @@
               <td class="check-in-btn-container">
                 <button
                   class="check-in-btn"
-                  id="btn-1"
-                  data-class="EarlyMorning"
+                  data-name="Early Morning"
+                  data-time="06:15 AM"
                 >
                   Check-in
                 </button>
@@ -83,8 +85,8 @@
               <td class="check-in-btn-container">
                 <button
                   class="check-in-btn"
-                  id="btn-2"
-                  data-class="MorningBeginner"
+                  data-name="Beginner"
+                  data-time="09:00 AM"
                 >
                   Check-in</button
                 >09:00 AM
@@ -96,8 +98,8 @@
               <td class="check-in-btn-container">
                 <button
                   class="check-in-btn"
-                  id="btn-3"
-                  data-class="MorningIntermediate"
+                  data-name="Intermediate/Advanced"
+                  data-time="10:00 AM"
                 >
                   Check-in</button
                 >10:00 AM
@@ -107,7 +109,11 @@
             </tr>
             <tr class="table-row">
               <td class="check-in-btn-container">
-                <button class="check-in-btn" id="btn-4" data-class="Kids">
+                <button 
+                class="check-in-btn" 
+                data-name="Kids 4-12 years"
+                data-time="05:00 PM"
+                >
                   Check-in</button
                 >05:00 PM
               </td>
@@ -118,8 +124,7 @@
               <td class="check-in-btn-container">
                 <button
                   class="check-in-btn"
-                  id="btn-5"
-                  data-class="NightBeginner"
+                  data-class="Night Beginner"
                 >
                   Check-in</button
                 >06:00 PM
@@ -131,8 +136,8 @@
               <td class="check-in-btn-container">
                 <button
                   class="check-in-btn"
-                  id="btn-6"
-                  data-class="NightIntermediate"
+                  data-name="Intermediate/Advanced"
+                  data-time="07:00 PM"
                 >
                   Check-in</button
                 >07:00 PM
@@ -178,6 +183,5 @@
         </div>
       </div>
     </div>
-    <script src="/script.js"></script>
   </body>
 </html>
