@@ -35,7 +35,7 @@ const togglePopUp = () => {
 
 // function to handle all things need to be done when checkin is accepted
 const handleCheckIn = () => {
-  popUpContainer.style.display = "none";
+  togglePopUp();
   classHistoryBody.innerHTML = historyTable(
     addRow(
       historyTableRow(target)
