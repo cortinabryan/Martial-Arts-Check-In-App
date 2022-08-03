@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+/* Only put stuff here that is used over multiple pages*/
+/* ================================= Tag styles =================================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body {
+    background-color: var(--grey);
+}
+
+/* ================================= Nav styles =================================*/
+.nav {
+    background: var(--dark);
+    height: 75px;
+    font-size: 1.5rem;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link {
+    color: var(--white);
+    font-family: serif;
+    text-decoration: none;
+    margin: 15px 25px;
+}
+
+/* ================================= User styles =================================*/
+.user {
+    background: var(--warning);
+    height: 100%;
+    grid-area: user-info;
+}
+
+.user-information {
+    width: 100%;
+    text-align: center;
+}
+
+.user-information-image {
+    width: 80px;
+    height: 80px;
+    margin: 5rem auto 2rem auto;
+    background: var(--white);
+    border-radius: 20px;
+    box-shadow: 5px 7px 4px rgba(0, 0, 0, 0.15);
+    border: 2px solid #78c2d9;
+}
+
+.user-information-details {
+    margin-top: 2rem;
+    width: 100%;
+    text-align: start;
+    padding: 2.5rem;
+}
+
+/* ================================= Popup styles =================================*/
+
+.popup-container {
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    position: fixed;
+    background-color: rgba(22, 50, 87, 0.504);
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-title {
+    color: var(--white);
+}
+
+.popup-button {
+    background-color: rgb(19, 77, 128);
+    color: var(--white);
+    padding: 1rem 2rem;
+
+    border: 2.5px solid var(--black);
+    transition: font-size 1.5s ease-out;
+}
+
+.popup-button:hover {
+    cursor: pointer;
+    font-size: 2.5rem;
+}

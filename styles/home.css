@@ -1,0 +1,135 @@
+.container{
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 1fr 1.5fr 1.5fr;
+    grid-template-areas:
+        "user-info class-sched class-sched"
+        "user-info belt-prog class-history";
+}
+
+/* ================================= Class schedule =================================*/
+.schedule-container {
+    margin: 25px 25px 0 0;
+    grid-column: span 6;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 2rem;
+    grid-area: class-sched;
+}
+
+.schedule-title {
+    background: var(--primary);
+    padding: 2rem;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.schedule {
+    border-collapse: separate;
+    border-spacing: 0 2rem;
+}
+
+.schedule-header {
+    font-size: 1.2rem;
+    text-align: center;    
+    background-color: var(--secondary);
+    color: var(--white) !important;
+}
+
+.schedule-entry{
+    color: var(--black);
+    text-align: center;    
+}
+
+.schedule th,
+.schedule td {
+    width: 150px;
+    border: 1px solid var(--black);
+    padding: 5px;
+}
+
+.schedule-entry:hover {
+    background-color: var(--success);
+}
+
+.schedule-action-checkin {
+    display: none;
+    margin: 0;
+    margin-right: 10px;
+    padding: 0.3em;
+    border-radius: 5px;
+    background-color: var(--info);
+    color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+.schedule-entry:hover .schedule-action-checkin {
+    display: initial;
+}
+
+.schedule-action-checkin:hover {
+    cursor: pointer;
+}
+
+/* ================================= Belt progression =================================*/
+.progression {
+    grid-column: 3 / span 3;
+    margin: 0 0 25px 0;
+    background: var(--white);
+    text-align: center;
+    border-radius: 2rem;
+    grid-area: belt-prog;
+}
+
+.progression-title {
+    background: var(--primary);
+    padding: 1.5rem;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.progression-image {
+    width: 15rem;
+    height: 80px;
+    margin: 5rem auto 3rem;
+}
+
+.progression-image-text {
+    color: var(--black);
+}
+
+/* ================================= Attendance history =================================*/
+.history-container {
+    margin: 0 25px 25px 0;
+    grid-column: span 3;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 2rem;
+    grid-area: class-history;
+}
+
+.history-title {
+    background: var(--primary);
+    padding: 1.5rem;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.history {
+    border-spacing: 0 0.5rem;
+    color: var(--black);
+}
+
+.history-header {
+    font-size: 1.2rem;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.history th,
+.history td {
+    width: 150px;
+    padding: 0.5rem 0;
+}
