@@ -1,9 +1,9 @@
 // function that returns the html of the historyTable with the rows inserted!
 const historyTable = (rows) => {
     return `
-        <tr>
-            <th class="table-header">Class</th>
-            <th class="table-header">Date & Time</th>
+        <tr class="history-header">
+            <th>Class</th>
+            <th>Date & Time</th>
         </tr>
         ${rows}
       `;

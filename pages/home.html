@@ -1,187 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Martial Arts Check-In</title>
-    <link rel="stylesheet" type="text/css" href="/styles/layout.css" />
-    <script src="../js/components.js" defer></script>
-    <script src="../script.js" defer></script>
-  </head>
-  <body>
-    <div class="nav">
-      <div class="left">
-        <a href="home.html">Home</a>
-        <a href="ranks.html">Ranks</a>
-      </div>
-      <div class="right">
-        <a href="billing.html">Billing</a>
-        <a href="contact.html">Contact</a>
-        <a href="/index.html">Log Out</a>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Martial Arts Check-In</title>
+  <link rel="stylesheet" type="text/css" href="/variables.css" />
+  <link rel="stylesheet" type="text/css" href="/utils.css" />
+  <link rel="stylesheet" type="text/css" href="/shared.css" />
+  <link rel="stylesheet" type="text/css" href="/styles/home.css" />
+  <script src="../js/components.js" defer></script>
+  <script src="../script.js" defer></script>
+</head>
+
+<body>
+  <div class="nav">
+    <div>
+      <a class="nav-link" href="home.html">Home</a>
+      <a class="nav-link" href="ranks.html">Ranks</a>
     </div>
-    <div class="container">
-      <div class="user">
-        <div class="user-information">
-          <img src="/images/user-icon.png" alt="" />
-          <h1>Name</h1>
-          <h2>Member since:</h2>
-          <div class="personal-details">
-            <h2>Information</h2>
-            <div class="row">
-              <h5>Birthday</h5>
-              <h5>05/24/1995</h5>
-            </div>
-            <div class="row">
-              <h5>Phone Number</h5>
-              <h5>702-***-****</h5>
-            </div>
-            <div class="row">
-              <h5>Email Address</h5>
-              <h5>member@gmail.com</h5>
-            </div>
-            <div class="row">
-              <h5>Address</h5>
-              <h5>8721 blablabla st</h5>
-            </div>
-            <div class="bottom">
-              <h5>Las Vegas NV 89123</h5>
-            </div>
-            <div class="row">
-              <h5>Emergency Contact</h5>
-              <h5>Jon Jones(Sibling)</h5>
-            </div>
-            <div class="bottom">
-              <h5>702-***-****</h5>
-            </div>
+    <div>
+      <a class="nav-link" href="billing.html">Billing</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="nav-link" href="/index.html">Log Out</a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="user">
+      <div class="user-information">
+        <img class="user-information-image" src="/images/user-icon.png" alt="" />
+        <h1>Name</h1>
+        <h2>Member since:</h2>
+        <div class="user-information-details">
+          <h2>Information</h2>
+          <div class="d-flex flex-row justify-content-between mt-2">
+            <h5>Birthday</h5>
+            <h5>05/24/1995</h5>
+          </div>
+          <div class="d-flex flex-row justify-content-between mt-2">
+            <h5>Phone Number</h5>
+            <h5>702-***-****</h5>
+          </div>
+          <div class="d-flex flex-row justify-content-between mt-2">
+            <h5>Email Address</h5>
+            <h5>member@gmail.com</h5>
+          </div>
+          <div class="d-flex flex-row justify-content-between mt-2">
+            <h5>Address</h5>
+            <h5>8721 blablabla st</h5>
+          </div>
+          <div class="text-right">
+            <h5>Las Vegas NV 89123</h5>
+          </div>
+          <div class="d-flex flex-row justify-content-between mt-2">
+            <h5>Emergency Contact</h5>
+            <h5>Jon Jones(Sibling)</h5>
+          </div>
+          <div class="text-right">
+            <h5>702-***-****</h5>
           </div>
         </div>
       </div>
-      <div class="class-schedule">
-        <h2 id="class-sched">Class Schedule</h2>
-        <table>
-          <tbody>
-            <tr>
-              <th class="table-header">Time</th>
-              <th class="table-header">Class</th>
-              <th class="table-header">Instructor</th>
-            </tr>
-            <tr class="table-row">
-              <td class="check-in-btn-container">
-                <button
-                  class="check-in-btn"
-                  data-name="Early Morning"
-                  data-time="06:15 AM"
-                >
-                  Check-in
-                </button>
-                06:15 AM
-              </td>
-              <td class="test">Early Morning</td>
-              <td>Prof. Caio Terra</td>
-            </tr>
-            <tr class="'table-row">
-              <td class="check-in-btn-container">
-                <button
-                  class="check-in-btn"
-                  data-name="Beginner"
-                  data-time="09:00 AM"
-                >
-                  Check-in</button
-                >09:00 AM
-              </td>
-              <td class="test">Beginner</td>
-              <td>Prof. Mikey Musemeci</td>
-            </tr>
-            <tr class="table-row">
-              <td class="check-in-btn-container">
-                <button
-                  class="check-in-btn"
-                  data-name="Intermediate/Advanced"
-                  data-time="10:00 AM"
-                >
-                  Check-in</button
-                >10:00 AM
-              </td>
-              <td class="test">Intermediate/Advanced</td>
-              <td>Prof. Andre Galvao</td>
-            </tr>
-            <tr class="table-row">
-              <td class="check-in-btn-container">
-                <button 
-                class="check-in-btn" 
-                data-name="Kids 4-12 years"
-                data-time="05:00 PM"
-                >
-                  Check-in</button
-                >05:00 PM
-              </td>
-              <td class="test">Kids 4-12 years</td>
-              <td>Prof. Gabi Garcia</td>
-            </tr>
-            <tr class="table-row">
-              <td class="check-in-btn-container">
-                <button
-                  class="check-in-btn"
-                  data-class="Night Beginner"
-                >
-                  Check-in</button
-                >06:00 PM
-              </td>
-              <td class="test">Beginner</td>
-              <td>Prof. Mica Galvao</td>
-            </tr>
-            <tr class="table-row">
-              <td class="check-in-btn-container">
-                <button
-                  class="check-in-btn"
-                  data-name="Intermediate/Advanced"
-                  data-time="07:00 PM"
-                >
-                  Check-in</button
-                >07:00 PM
-              </td>
-              <td class="test">Intermediate/Advanced</td>
-              <td>Prof. Gordon Ryan</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="belt-progression">
-        <h2>Belt</h2>
-        <img src="/images/Blue_Belt.png" alt="" />
-        <h3>Adult Blue Belt</h3>
-        <!-- <h3 id="belt-hours">14.5 hours in rank / 115 required</h3> -->
-        <!-- Test -->
-        <div class="belt-hours-row">
-          <h3 class="belt-hours belt-hours-num" id="belt-hours-cur">0</h3>
-          <h3 class="belt-hours belt-hours-text" id="">Hours in rank</h3>
-          <h3 class="belt-hours belt-hours-text" id="">/</h3>
-          <h3 class="belt-hours belt-hours-num" id="belt-hours-req">115</h3>
-          <h3 class="belt-hours belt-hours-text" id="">Required</h3>
-        </div>
-      </div>
-      <div class="class-history">
-        <h2>Attendance History</h2>
-        <table>
-          <tbody class="class-history-body" id="class-history-body">
-            <tr>
-              <th class="table-header">Class</th>
-              <th class="table-header">Date & Time</th>
-            </tr>
-          </tbody>
-        </table>
+    </div>
+    <div class="schedule-container">
+      <h2 class="schedule-title">Class Schedule</h2>
+      <table class="schedule">
+        <tbody>
+          <tr class="schedule-header">
+            <th>Time</th>
+            <th>Class</th>
+            <th>Instructor</th>
+          </tr>
+          <tr class="schedule-entry">
+            <td>
+              <button class="schedule-action-checkin" data-name="Early Morning" data-time="06:15 AM">
+                Check-in
+              </button>
+              06:15 AM
+            </td>
+            <td>Early Morning</td>
+            <td>Prof. Caio Terra</td>
+          </tr>
+          <tr class="schedule-entry">
+            <td>
+              <button class="schedule-action-checkin" data-name="Beginner" data-time="09:00 AM">
+                Check-in</button>09:00 AM
+            </td>
+            <td>Beginner</td>
+            <td>Prof. Mikey Musemeci</td>
+          </tr>
+          <tr class="schedule-entry">
+            <td>
+              <button class="schedule-action-checkin" data-name="Intermediate/Advanced" data-time="10:00 AM">
+                Check-in</button>10:00 AM
+            </td>
+            <td>Intermediate/Advanced</td>
+            <td>Prof. Andre Galvao</td>
+          </tr>
+          <tr class="schedule-entry">
+            <td>
+              <button class="schedule-action-checkin" data-name="Kids 4-12 years" data-time="05:00 PM">
+                Check-in</button>05:00 PM
+            </td>
+            <td>Kids 4-12 years</td>
+            <td>Prof. Gabi Garcia</td>
+          </tr>
+          <tr class="schedule-entry">
+            <td>
+              <button class="schedule-action-checkin" data-class="Night Beginner">
+                Check-in</button>06:00 PM
+            </td>
+            <td>Beginner</td>
+            <td>Prof. Mica Galvao</td>
+          </tr>
+          <tr class="schedule-entry">
+            <td>
+              <button class="schedule-action-checkin" data-name="Intermediate/Advanced" data-time="07:00 PM">
+                Check-in</button>07:00 PM
+            </td>
+            <td>Intermediate/Advanced</td>
+            <td>Prof. Gordon Ryan</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="progression">
+      <h2 class="progression-title">Belt</h2>
+      <img class="progression-image" src="/images/Blue_Belt.png" alt="" />
+      <h3 class="progression-image-text">Adult Blue Belt</h3>
+      <div class="d-flex flex-row justify-content-center">
+        <h3 class="mr-1 text-black fs-2" id="belt-hours-cur">0</h3>
+        <h3 class="mr-1 text-black fs-15" id="">Hours in rank</h3>
+        <h3 class="mr-1 text-black fs-15" id="">/</h3>
+        <h3 class="mr-1 text-black fs-2" id="belt-hours-req">115</h3>
+        <h3 class="mr-1 text-black fs-15" id="">Required</h3>
       </div>
     </div>
-    <div class="pop-up-container">
-      <div class="pop-up">
-        <h1>Would you like to check in?</h1>
-        <div class="button-row">
-          <button class="popup-btn" id="btn-yes">Yes</button>
-          <button class="popup-btn" id="btn-no">No</button>
-        </div>
+    <div class="history-container">
+      <h2 class="history-title">Attendance History</h2>
+      <table class="history">
+        <tbody id="history-body">
+          <tr class="history-header">
+            <th>Class</th>
+            <th>Date & Time</th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="popup-container">
+    <div class="popup">
+      <h1 class="popup-title">Would you like to check in?</h1>
+      <div class="d-flex justify-content-center mt-2 gap-5">
+        <button class="popup-button" id="btn-yes">Yes</button>
+        <button class="popup-button" id="btn-no">No</button>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

@@ -1,0 +1,53 @@
+.container3 .ranks {
+    width: 1500px;
+    margin: 2.5rem 0;
+    grid-column: span 6;
+    background: var(--white);
+    display: inherit;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 2rem;
+    /* min-height: 800px; */
+}
+
+.container3 .ranks h2 {
+    background: #235e85;
+    padding: 2rem;
+    border-radius: 2rem 2rem 0 0;
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.container3 .ranks .ranks-inner {
+    /* background:  */
+}
+
+.container3 .ranks .ranks-inner .rank {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 2rem 0;
+}
+
+/* Ranks / Billing */
+
+.container3 .ranks .ranks-inner #billing-row {
+    font-size: 1.8rem;
+    background-color: rgb(9, 68, 162);
+    padding: 1rem;
+    color: var(--white);
+}
+
+.container3 .ranks .ranks-inner .rank .amount {
+    font-size: 1.5rem;
+}
+
+.container3 .ranks .ranks-inner .rank h3 {
+    margin: 0 2rem;
+}
+
+.container3 .ranks .ranks-inner .rank img {
+    width: 15rem;
+    height: 80px;
+    margin: 0 5rem;
+}

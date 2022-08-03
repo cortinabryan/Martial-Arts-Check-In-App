@@ -1,7 +1,7 @@
-const checkInBtns = document.querySelectorAll(".check-in-btn");
+const checkInBtns = document.querySelectorAll(".schedule-action-checkin");
 const popUpBtn = document.querySelectorAll(".popup-btn");
-const popUpContainer = document.querySelector(".pop-up-container");
-const classHistoryBody = document.getElementById("class-history-body");
+const popUpContainer = document.querySelector(".popup-container");
+const classHistoryBody = document.getElementById("history-body");
 const beltHoursCur = document.getElementById("belt-hours-cur");
 
 let popUpHidden = true;
