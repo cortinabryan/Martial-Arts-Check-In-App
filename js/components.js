@@ -11,5 +11,11 @@ const historyTable = (rows) => {
 
 // function that returns the html of historyTable row, two values needed are the name of the class and the time
 const historyTableRow = ({ name, time }) => {
-  return `<tr> <td>${name}</td> <td>${time}</td> <td><button> Delete </button> </td> </tr>`;
+  return `<tr class='class-history-row'>
+    <td>${name}</td>
+    <td>${time}</td>
+    <td class='check-in-btn-container'> 
+        <button class='check-in-btn'> Delete </button>
+    </td>
+    </tr>`;
 };

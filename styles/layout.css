@@ -112,7 +112,7 @@ body {
 
 /* Wow Moment */
 
-.container .class-schedule table tr .check-in-btn {
+.check-in-btn {
   /* border: none !important; */
   margin: 0;
   padding: 0.3em;
@@ -123,20 +123,17 @@ body {
   font-size: 1em;
   display: none;
 }
-.container .class-schedule table tr:hover .check-in-btn {
+tr:hover .check-in-btn {
   display: initial;
+  cursor: pointer;
 }
 
 /* - */
 
-.class-schedule table tr:hover + .check-in-btn {
+tr:hover + .check-in-btn {
   background-color: yellow;
   display: block;
   transition: font-size 1.5s ease-out;
-}
-
-.container .class-schedule table tr .check-in-btn:hover {
-  cursor: pointer;
 }
 
 /* Belt Progression */
@@ -200,10 +197,35 @@ body {
   border-spacing: 0 0.5rem;
   color: #000;
 }
+
 .container .class-history th {
   font-size: 1.2rem;
   width: 150px;
+  /* width: 200px; */
+  /* width: 100%; */
   padding: 0.5rem 0;
+  background-color: rgb(9, 68, 162);
+  color: rgb(232, 230, 227) !important;
+}
+
+.container .class-history-row {
+  /* color: red;; */
+  /* padding: 500px; */
+  /* display: flex; */
+  /* direction: rtl; */
+  /* flex-direction: row; */
+}
+
+.container .class-history-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  /* justify-content: center; */
+  /* align-self: center; */
+}
+
+.container .class-history-row td {
+  /* */
 }
 
 /* Double check */
@@ -238,9 +260,9 @@ body {
   color: #ffffff;
   font-size: 2rem;
 }
-.container3 .ranks .ranks-inner {
-  /* background:  */
-}
+/* .container3 .ranks .ranks-inner {
+
+} */
 .container3 .ranks .ranks-inner .rank {
   display: flex;
   justify-content: space-between;
@@ -379,7 +401,9 @@ body {
   /* font-size: 1.2rem;
   background-color: #4287f5;
   color: #fff !important; */
-  background-color: rgb(9, 68, 162);
-  color: rgb(232, 230, 227) !important;
+  /* background-color: rgb(9, 68, 162);
+  color: rgb(232, 230, 227) !important; */
+  /* display: flex; */
+  /* flex-direction: column; */
   /* margin-bottom: 10px; */
 }
