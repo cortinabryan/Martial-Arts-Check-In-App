@@ -3,6 +3,7 @@ const popUpBtn = document.querySelectorAll(".popup-btn");
 const popUpContainer = document.querySelector(".pop-up-container");
 const classHistoryBody = document.getElementById("class-history-body");
 const beltHoursCur = document.getElementById("belt-hours-cur");
+// const deleteBtn = documnet.querySelector(".delete-btn");
 
 let popUpHidden = true;
 let cumulativeHours = 0;
@@ -11,6 +12,23 @@ let cumulativeHours = 0;
 let target = {
   name: "",
   time: "",
+};
+
+const deleteClick = (event) => {
+  const index = event.target.getAttribute("data-index");
+  const history = getHistory();
+  history.splice(index, 1);
+  localStorage.setItem("history", JSON.stringify(history));
+  updateHistoryHTML();
+  updateHoursHTML();
+  addEventListenerToDeleteBtns();
+};
+
+const addEventListenerToDeleteBtns = () => {
+  const deleteBtns = document.querySelectorAll(".delete-btn");
+  deleteBtns.forEach((e) => {
+    e.addEventListener("click", deleteClick);
+  });
 };
 
 // ================================ Functions ==========================================
@@ -28,7 +46,7 @@ const getHistory = () => {
 // function add historyTableRow for each item in the history array
 const historyToRows = () => {
   return getHistory()
-    .map((item) => historyTableRow(item))
+    .map((item, index) => historyTableRow(item, index))
     .join("");
 };
 
@@ -57,6 +75,7 @@ const handleCheckIn = () => {
   addHistory();
   updateHistoryHTML();
   updateHoursHTML();
+  addEventListenerToDeleteBtns();
 };
 
 // ================================ Event Handlers ==========================================
@@ -83,4 +102,10 @@ checkInBtns.forEach((e) => {
 (function () {
   updateHistoryHTML(); // this will populate history table if there is already history present
   updateHoursHTML(); // this will populate hours html if there is alreadt history present
+  addEventListenerToDeleteBtns();
 })();
+
+////////////////////// TEST /////////////////////////////////////
+
+// delete button on click
+// delete selected table row

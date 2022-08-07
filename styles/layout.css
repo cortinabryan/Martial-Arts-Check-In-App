@@ -208,24 +208,22 @@ tr:hover + .check-in-btn {
   color: rgb(232, 230, 227) !important;
 }
 
-.container .class-history-row {
-  /* color: red;; */
-  /* padding: 500px; */
-  /* display: flex; */
-  /* direction: rtl; */
-  /* flex-direction: row; */
+/*-------------------Delete Button--------------------------*/
+
+.container .delete-btn {
+  margin: 0;
+  padding: 0.3em;
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: #0e5ede;
+  color: #ffffff;
+  font-size: 1em;
+  display: none;
 }
 
-.container .class-history-row {
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-  /* justify-content: center; */
-  /* align-self: center; */
-}
-
-.container .class-history-row td {
-  /* */
+tr:hover .delete-btn {
+  display: initial;
+  cursor: pointer;
 }
 
 /* Double check */
